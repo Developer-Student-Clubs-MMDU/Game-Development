@@ -25,14 +25,14 @@
 
 
 ## Contribution Guidelines 🧾
-The contribution guidelines are as per the guide [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/CONTRIBUTING.md).
+The contribution guidelines are as per the guide [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/master/CONTRIBUTING.md).
 
 
 <br>
 
 
 ## License 📑
-Click [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/License.md) to go through the License
+Click [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/master/License.md) to go through the License
 
 
 <br>
@@ -40,7 +40,7 @@ Click [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/bl
 
 ## Code of Conduct
 
-Click to see the [Code of Conduct](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/CODE_OF_CONDUCT.md)
+Click to see the [Code of Conduct](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/master/CODE_OF_CONDUCT.md)
 
 
 
