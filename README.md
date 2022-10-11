@@ -7,7 +7,7 @@
  ![License](https://img.shields.io/github/license/Developer-Student-Clubs-MMDU/Game-Development?style=for-the-badge)
  
  
-## Step to contribute
+## Steps to contribute
 - Like the repo
 - Try making the seprate branch for your issues
 - Fork repo
