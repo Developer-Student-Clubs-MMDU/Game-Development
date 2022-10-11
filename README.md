@@ -18,3 +18,37 @@
 
 
 # Note :- All the things and assests you are uploading we have soley right to use it the way we want and it will belong to the organization
+
+
+
+<br>
+
+
+## Contribution Guidelines 🧾
+The contribution guidelines are as per the guide [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/CONTRIBUTING.md).
+
+
+<br>
+
+
+## License 📑
+Click [HERE](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/License.md) to go through the License
+
+
+<br>
+
+
+## Code of Conduct
+
+Click to see the [Code of Conduct](https://github.com/Developer-Student-Clubs-MMDU/Game-Development/blob/main/CODE_OF_CONDUCT.md)
+
+
+
+<br>
+
+
+## Contributors ✨
+
+<a href="https://github.com/Developer-Student-Clubs-MMDU/Game-Development/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Developer-Student-Clubs-MMDU/Game-Development" />
+</a>
