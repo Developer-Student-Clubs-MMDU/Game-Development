@@ -2,7 +2,7 @@
 
 
  ![GitHub forks](https://img.shields.io/github/forks/Developer-Student-Clubs-MMDU/Game-Development?label=Forks&style=for-the-badge) 
- ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Developer-Student-Clubs-MMDU/Game-Development?style=for-the-badge)
+ ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Developer-Student-Clubs-MMDU/Game-Development?style=for-the-badge) 
  ![GitHub issues](https://img.shields.io/github/issues/Developer-Student-Clubs-MMDU/Game-Development?style=for-the-badge) 
  ![License](https://img.shields.io/github/license/Developer-Student-Clubs-MMDU/Game-Development?style=for-the-badge)
  
