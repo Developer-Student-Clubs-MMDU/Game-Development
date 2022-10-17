@@ -1,0 +1,41 @@
+﻿Texture2D<float> In_BaseMaskTex;
+RWTexture2D<float> OutputTex;
+
+float4 HeightRange;
+
+float RemapMin;
+float RemapMax;
+
+float InverseLerp(float a, float b, float t)
+{
+    return (t - a) / (b - a);
+}
+
+float GetHeightScale(float height)
+{
+	return saturate((height - HeightRange.x) / (HeightRange.y - HeightRange.x));
+}
+
+#pragma kernel Remap
+[numthreads(1, 1, 1)]
+void Remap(uint3 id : SV_DispatchThreadID)
+{
+	float heightScale = GetHeightScale(In_BaseMaskTex[id.xy]);
+
+    float value = 1;
+
+    if (heightScale < RemapMin) 
+    {
+        value = 0;
+    }
+    else if(heightScale > RemapMax)
+    {
+        value = 1;
+    }
+    else
+	{
+        value = InverseLerp(RemapMin, RemapMax, heightScale);
+	}
+
+    OutputTex[id.xy] = value;
+}
