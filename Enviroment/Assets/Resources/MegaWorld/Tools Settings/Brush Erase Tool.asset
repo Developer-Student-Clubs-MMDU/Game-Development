@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2214c54c1db3943b8e9ba117a9a6fd, type: 3}
+  m_Name: Brush Erase Tool
+  m_EditorClassIdentifier: 
+  BrushSettingsForErase:
+    _brushSpacing: 30
+    _brushRotation: 0
+    _brushSize: 100
+    ProceduralMask:
+      Shape: 0
+      Falloff: 50
+      Strength: 100
+      NoiseType: 0
+      Fractal:
+        noiseType: 0
+        seed: 0
+        octaves: 3
+        frequency: 0.5
+        lacunarity: 2
+        persistence: 0.5
+      RangeMin: -0.5
+      RangeMax: 0.5
+      Seed: 0
+      Octaves: 4
+      Frequency: 1
+      Lacunarity: 2
+      Persistence: 0.5
+      FractalNoise: 0
+      RemapMin: 0
+      RemapMax: 1
+      Invert: 0
+      ProceduralMaskEditor:
+        proceduralMaskFoldout: 1
+        additionalNoiseSettingsFoldout: 1
+        proceduralBrushPreviewTextureFoldout: 1
+    CustomMasks:
+      customBrushes: []
+      selectedCustomBrush: 0
+      customMasksEditor:
+        alphaBrushesWindowsScroll: {x: 0, y: 0}
+        alphaBrushesWindowHeight: 100
+    MaskType: 1
+    SpacingEqualsType: 1
+    BrushJitterSettings:
+      _brushSizeJitter: 0
+      _brushScatter: 0
+      _brushRotationJitter: 0
+      _brushScatterJitter: 0
+    BrushSettingsEditor:
+      brushSettingsFoldout: 1
+  EraseStrength: 1

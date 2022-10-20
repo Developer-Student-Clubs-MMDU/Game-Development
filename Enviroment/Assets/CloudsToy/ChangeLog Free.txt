@@ -1,0 +1,74 @@
+CloudsToy ChangeLog - Unity 5.
+
+v1.0 	 - Initial release.
+
+v1.1 	 - SpeedTrees removed from the project.
+
+v1.2 	 - Erasing preprocessor conditional compilation for Unity v4.x (not needed anymore).
+		 - Fixed Bug: The manager's position is being updated always  (so it can be moved around in runtime)
+		 - Fixed Bug: Removed name dependency on "CloudsToy Mngr" gameobject.
+	 
+v1.2.1  - Optimized CloudMovement.cs.
+		- Optimized CloudParticle.AnimatedCloud().
+		- Modified CloudsToy position checker: do NOT check anything if clouds velocity are zero.
+		- Added a PositionCheckTimer in Advanced Settings in CloudsToy (it's not a critical check so it cab be slowed down).
+  		  (Will check the clouds positions in a time interval and not every frame).
+		- Modified CloudsToy initial values so it will be less FPS expensive by default.
+		
+v1.3	- Clouds Creation/Modification in Runtime (with example).
+		- Fixed Several scripts to remove warnings in console(CloudsToyEditor, CloudParticle, ProceduralCloudTexture).
+		- Internal Fixed: Fixed Several scripts to remove warnings in console (ExportCloudsToy, TerrainToolkitEditor, TakeScreenshootInEditor).
+		- Renamed script (and class name) Perlin a CTPerlin (avoid incompatibility with others noise generation libs).
+		- Renamed class SmoothRandom a CTSmoothRandom in CTPerlin.cs (avoid incompatibility with others noise generation libs).
+		- Fixed Bug IOS: AddComponent Related error (XCode) in CloudParticle.
+		- Deleted UnityScript code from Standard Aseets (no longer needed).
+		- Converted to C# few UnityScript code and improved that code a little bit (AutoDestructTimed).
+		  Project cleaned from UnityScript code.
+		- Created new folder "Script/Utils" and "Script/Example" to acomodate Util Scripts.
+		- Deleted some folders from Standard Assets (not needed anymore) and moved key assets to Cloudstoy Folder.
+
+v2.0 	- Changed to shuriken.
+		- Improvement: CloudAnimation is done by itself in shuriken (instead of upgrading the particles manually in the Update()).
+		- Code cleaned and commented.
+
+v2.1	- NEW Cloud Presets: Dark, Cotton, Cotton Light, Orange Oil
+		- Created new shadow material (Shadow_Light).
+		- Aded Cyclic Fade In/Out cloud animation.
+		- Cloud preset Fantasy modified.
+		- Fix Bug: Soft clouds are not renderer at all.
+		- Fix Bug: Cloud self rotation does not start when Animate cLoud is enabled.
+		- Fix Bug: Selecting preset None now update that infirmation in the Inspector.
+		- Modified: Size Factor & emission mult range values has been changed (easier to create more/less detailed clouds).
+		- Get the same folder organizations than CloudsToy Src (due to new Asset Store rules).
+		- Deleted Standard Assets folder (removed flares and SkyBoxes).
+		- Reordered and renamed some assets and folders (make more sense now).
+
+v2.2	- NEW: Added trees, grass and flowers.
+		- NEW: Terrain created with trees (so we can build a cool demo scene).
+		- NEW: Added basic First Person Controller (so you can walk too).
+		- NEW: ChangeWalker. You can change betwen walk and fly in the scenes (pressin 'y').
+		- NEW: EscapeKeyDetector. You can go back to the main menu by pressing 'Esc' key.
+		- NEW: Added a Main Menu scene.
+		- NEW: Aded new demo scenes with different cloud/light/skyBox presets.
+		- Fix Bug: Runtime check of NumberClouds to not exceed MaximumClouds number.
+
+v2.2.1  - Removing Antialiasing to avoid white artifacts in screen,
+		- Camera to Forward Rendering mode.
+		- NEW: Added Stars & Falling starts particle systems to be used in the night demo scene.
+		- NEW: Added a Rock, Tree and fower to the project.
+		- NEW: RateMe buttons in the Inspector window.
+		- Fix Bug: RepaintClouds button is now properly centered in the inspector window.
+		- Documentation updated.
+
+v2.2.2  - Changed the terrain settings (making it work over WebGL).
+		- Added floating particles in the forest (cloudstoy scene demo).
+
+v2.2.3  - NEW: CloudsToy Simple -> A Suriken particle system example to create basic clouds without using CloudsToyMngr.
+		- NEW: New CloudsToy Windows containing sumarized relevant information.
+		- NEW: Added a Cloudstoy icon in CloudsToyMngr in Inspector (clicking on it opens a CloudsToy welcome window).
+		- Fixed: Sprite button used in main mane now has a power of two size.
+		- Changed: CloudMovement-> velocity has been renamed (no more capital "V").
+		- Changed: Example scenes have been renamed so you can drag them to Build settings in order.
+		- Changed: Deleted old precompiled directives #if UNITY_5_0
+		- Fixed: Console earnings in Unity 2018 and 2019
+		- Updated documentation.

@@ -1,0 +1,39 @@
+﻿Texture2D<float> _MainTex01;
+Texture2D<float> _MainTex02;
+RWTexture2D<float> OutputTex;
+
+int _BlendMode;
+
+#pragma kernel BlendModes
+[numthreads(1, 1, 1)]
+void BlendModes(uint3 id : SV_DispatchThreadID)
+{
+    float result = 1;
+
+    float mainValue01 = _MainTex01[id.xy];
+    float mainValue02 = _MainTex02[id.xy];
+
+    switch (_BlendMode)
+    {
+        case 0: //Multiply
+        {
+            result = mainValue01 * mainValue02;
+
+			break;
+        }
+        case 1: //Add
+        {
+			result = mainValue01 + mainValue02;
+
+			break;
+        }
+        case 2: //Subtract
+        {
+			result = mainValue01 - mainValue02;
+
+			break;
+        }
+    }
+
+	OutputTex[id.xy] = clamp(result, 0, 1);
+}
